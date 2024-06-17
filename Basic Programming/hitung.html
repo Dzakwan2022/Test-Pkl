@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung</title>
+    <script>
+        function hitung() {
+            N = parseInt(document.getElementById('input').value);
+            jumlah = 0;
+            for (i = 1; i <= N; i++) {
+                if (i % 2 !== 0) {
+                    jumlah += i;
+                }
+            }
+            document.getElementById('hasil').innerText = 'Hasil Jumlah Dari Bilangan Ganjil 1 Sampai ' + N + ' adalah: ' + jumlah;
+        }
+    </script>
+</head>
+<body>
+    <table align="center" border="4">
+        <tr>
+            <th colspan="3">
+                Jumlah Bilangan Ganjil
+            </th>
+        </tr>
+        <tr>
+            <td>Nilai N</td>
+            <td>:</td>
+            <td><input type="number" id="input" min="1"></td>
+        </tr>
+        <tr>
+            <td><button onclick="hitung()">Hitung</button></td>
+            <td>:</td>
+            <td><p id="hasil"></p></td>
+        </tr>
+    </table>
+</body>
+</html>

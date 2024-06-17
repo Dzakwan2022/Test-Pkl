@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: #800800;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+        }
+        .img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            margin-bottom: 15px;
+        }
+        .nama {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .phone {
+            color: #ffffff;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Daftar Kontak</h1>
+        <div class="list">
+            <div class="card">
+                <img src="luffy.jpeg" alt="Gambar Kontak" class="img">
+                <div class="nama">luffy</div>
+                <div class="phone">0823-2213-3131</div>
+            </div>
+            <div class="card">
+                <img src="zoro.jpeg" alt="Gambar Kontak" class="img">
+                <div class="nama">Zoro</div>
+                <div class="phone">0823-2213-3131</div>
+            </div>
+            <div class="card">
+                <img src="sanji.jpeg" alt="Gambar Kontak" class="img">
+                <div class="nama">Sanji</div>
+                <div class="phone">0823-2213-3131</div>
+            </div>
+            <div class="card">
+                <img src="usop.jpeg" alt="Gambar Kontak" class="img">
+                <div class="nama">Usop</div>
+                <div class="phone">0823-2213-3131</div>
+            </div>
+            <div class="card">
+                <img src="nami.jpeg" alt="Gambar Kontak" class="img">
+                <div class="nama">Nami</div>
+                <div class="phone">0823-2213-3131</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

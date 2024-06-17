@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kasir</title>
+    <script>
+        function hitung(){
+           indomie = 3000;
+           telor = 1500;
+           kopi = 1000;
+           susu = 2500;
+
+           jindomie = parseInt(document.getElementById('indomie').value) || 0;
+           jtelor = parseInt(document.getElementById('telor').value) || 0;
+           jkopi = parseInt(document.getElementById('kopi').value) || 0;
+           jsusu = parseInt(document.getElementById('susu').value) || 0;
+
+           total = (jindomie * indomie) + (jtelor * telor) + (jkopi * kopi) + (jsusu * susu);
+
+           document.getElementById('hasil').innerText = 'Rp.' + total;
+        }
+    </script>
+</head>
+<body>
+    <table align="center" border="1">
+        <tr>
+            <th colspan="4">
+                Menghitung Belanjaan 
+            </th>
+        </tr>
+        <tr>
+            <td>Indomie</td>
+            <td>Rp.3000</td>
+            <td>:</td>
+            <td><input type="number" id="indomie" min="0"></td>
+        </tr>
+        <tr>
+            <td>Telor</td>
+            <td>Rp.1500</td>
+            <td>:</td>
+            <td><input type="number" id="telor" min="0"></td>
+        </tr>
+        <tr>
+            <td>Kopi</td>
+            <td>Rp.1000</td>
+            <td>:</td>
+            <td><input type="number" id="kopi" min="0"></td>
+        </tr>
+        <tr>
+            <td>Susu</td>
+            <td>Rp.2500</td>
+            <td>:</td>
+            <td><input type="number" id="susu" min="0"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="hitung()">Total</button>
+            </td>
+            <td>:</td>
+            <td><p id="hasil"></p></td>
+        </tr>
+    </table>
+</body>
+</html>
